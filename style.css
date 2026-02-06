@@ -295,3 +295,143 @@ width: 100%;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .overlay-projeto {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-projeto {
+    background: #0d0d0d;
+    width: 80%;
+    max-width: 900px;
+    padding: 25px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.fechar {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+}
+
+.conteudo-projeto {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.conteudo-projeto img {
+    width: 45%;
+    border-radius: 10px;
+}
+
+.texto-projeto {
+    color: #fff;
+}
+
+.projetos-card {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.projetos-card:hover {
+    transform: scale(1.03);
+}
+
+
+
+
+.overlay-projeto {
+    animation: fade 0.3s ease;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
+@media (max-width: 768px) {
+    .conteudo-projeto {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .conteudo-projeto img {
+        width: 100%;
+    }
+}
+
+
+
+
+
+.botao-git {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #044c08bd;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-git:hover {
+    background: #241e3c;
+    transform: scale(1.05);
+}
+
+
+
+.botao-git {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #044c08bd;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-git:hover {
+    background: #241e3c;
+    transform: scale(1.05);
+}
+
+
+
+

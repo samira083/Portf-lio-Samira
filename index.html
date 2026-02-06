@@ -13,6 +13,16 @@
 
 
 
+
+
+        <div id="bg-magnetic">
+        <div id="particles"></div>
+        </div>
+
+
+        
+
+
         <div class="particulas"></div>
         <div class="particulas2"></div>
 
@@ -75,9 +85,9 @@
             <h2 class="sobre-titulo">SOBRE MIM:</h2>
             <div class="sobre-paragrafo">
             <p class="sobre-caixa">
-                Sou estudante de Ciência da Computação com foco em desenvolvimento Full Stack. Busco ir além da formação acadêmica por meio de projetos pessoais, estudos contínuos e atividades práticas, aplicando na prática os conhecimentos que adquiro.
+                Sou estudante de Ciência da Computação com foco em desenvolvimento <strong>Full Stack</strong>. Busco ir além da formação acadêmica por meio de projetos pessoais, estudos contínuos e atividades práticas, aplicando na prática os conhecimentos que adquiro.
 
-Tenho experiência no desenvolvimento de aplicações web e desktop, criação de interfaces modernas, integração com APIs, banco de dados e autenticação, além de automação, bots e web scraping. Participo de hackathons e desafios práticos, trabalhando com prazos, organização de código e resolução de problemas reais.
+Tenho experiência no <strong>desenvolvimento de aplicações web e desktop, criação de interfaces modernas, integração com APIs, banco de dados e autenticação, além de automação, bots e web scraping</strong>. Participo de hackathons e desafios práticos, trabalhando com prazos, organização de código e resolução de problemas reais.
 
 Mantenho uma rotina disciplinada de estudos voltada à programação, fundamentos de sistemas e evolução técnica constante, com o objetivo de atuar como desenvolvedora Full Stack, entregando soluções eficientes, bem estruturadas e funcionais.
             </p>
@@ -101,9 +111,11 @@ Mantenho uma rotina disciplinada de estudos voltada à programação, fundamento
 
 
 
-                <div class="projetos-card">
+                <div class="projetos-card" >
                     <img src="60_seconds.png" alt="projeto 1" class="projeto-imagem">
-                    <div class="caixa-texto-projeto">
+
+
+                    <div class="caixa-texto-projeto" onClick="abrirDetalhes()">
                     <h3 class="info-projetos">ESCOLHA SEU DESTINO</h3>
                     <p class="paragrafo-projetos">Inspirado no jogo 60 Seconds!, este projeto permite que o próprio jogador vivencie suas necessidades básicas — como fome, sede, vida e inventário...</p>
                     </div>
@@ -111,10 +123,59 @@ Mantenho uma rotina disciplinada de estudos voltada à programação, fundamento
 
 
 
+<div id="overlay-projeto" class="overlay-projeto">
+    <div class="modal-projeto">
+
+        <span class="fechar" onclick="fecharDetalhes()">✖</span>
+
+        <div class="conteudo-projeto">
+            <img src="60_seconds.png" alt="Projeto grande">
+
+            <div class="texto-projeto">
+                <h2>ESCOLHA SEU DESTINO</h2>
+                <p>
+                    Projeto inspirado no jogo <strong>60 Seconds!</strong>, focado em tomada de decisões
+                    e gerenciamento de recursos.
+                    <br><br>
+                    <strong>Formações envolvidas:</strong><br>
+                    • Lógica de Programação<br>
+                    • JavaScript<br>
+                    • HTML e CSS<br>
+                    • Design de Interfaces
+                </p>
+
+                <button onclick="irGit60()" class="botao-git">
+                PROJETO NO GITHUB
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+</div>
 
 
-                <div class="projetos-card">
-                    <img src="check_list.gif" alt="projeto 1" class="projeto-imagem">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="projetos-card" onclick="abrirChecklist()">
+                    <img src="check_list.gif" alt="Check List" class="projeto-imagem">
                     <div class="caixa-texto-projeto">
                     <h3 class="info-projetos">Check List</h3>
                     <p class="paragrafo-projetos">Cyber-Routine é um assistente virtual no estilo cyberpunk. Inspirado no jogo 60 Seconds!, este projeto permite que o próprio jogador vivencie suas necessidades básicas — como fome, sede, vida e inventário...</p>
@@ -126,13 +187,144 @@ Mantenho uma rotina disciplinada de estudos voltada à programação, fundamento
 
 
 
-                <div class="projetos-card">
-                    <img src="futebol.png" alt="projeto 1" class="projeto-imagem">
+                <div id="overlay-checklist" class="overlay-projeto">
+    <div class="modal-projeto">
+
+        <span class="fechar" onclick="fecharChecklist()">✖</span>
+
+        <div class="conteudo-projeto">
+            <img src="check_list.gif" alt="Check List grande">
+
+            <div class="texto-projeto">
+                <h2>Check List – Cyber Routine</h2>
+                <p>
+                    Assistente virtual com estética <strong>cyberpunk</strong>,
+                    focado na criação de rotinas personalizadas.
+                    <br><br>
+                    <strong>Tecnologias e formações:</strong><br>
+                    • Python<br>
+                    • Lógica de Programação<br>
+                    • Interface com Tkinter<br>
+                    • UX/UI<br>
+                    • Automação de rotinas
+                </p>
+                <button onclick="irGitChecklist()" class="botao-git">
+                PROJETO NO GITHUB
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="projetos-card" onclick="abrirFutebol()">
+                    <img src="futebol.png" alt="Futebol API" class="projeto-imagem">
                     <div class="caixa-texto-projeto">
                     <h3 class="info-projetos">Futebol API</h3>
                     <p class="paragrafo-projetos">Uma API REST completa para gerenciamento de times de futebol, jogadores, partidas e escalações, construída com Node.js, TypeScript, Prisma e PostgreSQL, totalmente containerizada com Docker...</p>
                     </div>
                 </div>
+
+
+
+
+
+
+                <div id="overlay-futebol" class="overlay-projeto">
+    <div class="modal-projeto">
+
+        <span class="fechar" onclick="fecharFutebol()">✖</span>
+
+        <div class="conteudo-projeto">
+            <img src="futebol.png" alt="Futebol API grande">
+
+            <div class="texto-projeto">
+                <h2>Futebol API</h2>
+                <p>
+                    API REST completa para gerenciamento de times, jogadores,
+                    partidas e escalações.
+                    <br><br>
+                    <strong>Tecnologias e formações:</strong><br>
+                    • Node.js<br>
+                    • TypeScript<br>
+                    • Prisma ORM<br>
+                    • PostgreSQL<br>
+                    • Docker<br>
+                    • Arquitetura REST
+                </p>
+            <button onclick="irGitFutebol()" class="botao-git">
+            PROJETO NO GITHUB
+            </button>
+
+            <script>
+            function irGitFutebol() {
+                window.open(
+                    "https://github.com/milenazevedo/futebol-api",
+                    "_blank"
+                );
+            }
+
+            function irGitChecklist() {
+                window.open(
+                    "https://github.com/samira083/CheckList",
+                    "_blank"
+                );
+            }
+
+            function irGit60() {
+                window.open(
+                    "https://github.com/samira083/matriz.C",
+                    "_blank"
+                );
+            }
+            </script>
+
+
+
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+<script>
+function abrirChecklist() {
+    document.getElementById("overlay-checklist").style.display = "flex";
+}
+
+function fecharChecklist() {
+    document.getElementById("overlay-checklist").style.display = "none";
+}
+
+function abrirFutebol() {
+    document.getElementById("overlay-futebol").style.display = "flex";
+}
+
+function fecharFutebol() {
+    document.getElementById("overlay-futebol").style.display = "none";
+}
+</script>
 
         </section>
 
@@ -171,6 +363,22 @@ Mantenho uma rotina disciplinada de estudos voltada à programação, fundamento
 
 
         <script>
+            // Abre o modal de detalhes do projeto
+            function abrirDetalhes(){
+                const overlay = document.getElementById('overlay-projeto');
+                if(overlay){
+                    overlay.style.display = 'flex';
+                }
+            }
+
+            // Fecha o modal de detalhes do projeto
+            function fecharDetalhes(){
+                const overlay = document.getElementById('overlay-projeto');
+                if(overlay){
+                    overlay.style.display = 'none';
+                }
+            }
+
             function enviarWhats(event){
                 event.preventDefault();
                 const nome = document.getElementById('nome').value;
@@ -186,6 +394,6 @@ Mantenho uma rotina disciplinada de estudos voltada à programação, fundamento
 
 
 
-        
+
     </body>
     </html>
