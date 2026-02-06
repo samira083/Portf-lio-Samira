@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+
+            <title>DEV | Portfólio</title>
+        </head>
+
+
+    <body>
+
+
+
+        <div class="particulas"></div>
+        <div class="particulas2"></div>
+
+
+
+
+
+
+
+        <nav class="navegacao">
+            <ul class="menu">
+                <li>
+                    <a href="#inicio" class="menu-link">Início</a>
+                </li>
+                <li>
+                    <a href="#sobre" class="menu-link">Sobre</a>
+                </li>
+                <!-- <li>
+                    <a href="#curriculo" class="menu-link">Currículo</a>
+                </li>-->
+                <li>
+                    <a href="#projetos" class="menu-link">Projetos</a>
+                </li>
+                <li>
+                    <a href="#contato" class="menu-link">Contato</a>
+                </li>
+            </ul>
+
+        </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+        <main id="inicio" class="cabecalho">
+
+                <img src="samira_IA.png" alt="Foto de Samira" class="foto-perfil">
+                <h1>SAMIRA</h1>
+                <p class="cabecalho-sub-titulo">Desenvolvedora Full-Stack</p> 
+
+        </main>
+
+
+
+        <br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+        <section id="sobre" class="sobre">
+            <h2 class="sobre-titulo">SOBRE MIM:</h2>
+            <div class="sobre-paragrafo">
+            <p class="sobre-caixa">
+                Sou estudante de Ciência da Computação com foco em desenvolvimento Full Stack. Busco ir além da formação acadêmica por meio de projetos pessoais, estudos contínuos e atividades práticas, aplicando na prática os conhecimentos que adquiro.
+
+Tenho experiência no desenvolvimento de aplicações web e desktop, criação de interfaces modernas, integração com APIs, banco de dados e autenticação, além de automação, bots e web scraping. Participo de hackathons e desafios práticos, trabalhando com prazos, organização de código e resolução de problemas reais.
+
+Mantenho uma rotina disciplinada de estudos voltada à programação, fundamentos de sistemas e evolução técnica constante, com o objetivo de atuar como desenvolvedora Full Stack, entregando soluções eficientes, bem estruturadas e funcionais.
+            </p>
+            </div>
+        </section>
+
+
+
+
+
+        <br><br><br><br><br><br>
+
+
+
+
+
+        <section id="projetos" class="projetos">
+            <h2 class="projetos-titulos">MEUS PROJETOS</h2>
+            <div class="projetos-caixa">
+
+
+
+
+                <div class="projetos-card">
+                    <img src="60_seconds.png" alt="projeto 1" class="projeto-imagem">
+                    <div class="caixa-texto-projeto">
+                    <h3 class="info-projetos">ESCOLHA SEU DESTINO</h3>
+                    <p class="paragrafo-projetos">Inspirado no jogo 60 Seconds!, este projeto permite que o próprio jogador vivencie suas necessidades básicas — como fome, sede, vida e inventário...</p>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="projetos-card">
+                    <img src="check_list.gif" alt="projeto 1" class="projeto-imagem">
+                    <div class="caixa-texto-projeto">
+                    <h3 class="info-projetos">Check List</h3>
+                    <p class="paragrafo-projetos">Cyber-Routine é um assistente virtual no estilo cyberpunk. Inspirado no jogo 60 Seconds!, este projeto permite que o próprio jogador vivencie suas necessidades básicas — como fome, sede, vida e inventário...</p>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="projetos-card">
+                    <img src="futebol.png" alt="projeto 1" class="projeto-imagem">
+                    <div class="caixa-texto-projeto">
+                    <h3 class="info-projetos">Futebol API</h3>
+                    <p class="paragrafo-projetos">Uma API REST completa para gerenciamento de times de futebol, jogadores, partidas e escalações, construída com Node.js, TypeScript, Prisma e PostgreSQL, totalmente containerizada com Docker...</p>
+                    </div>
+                </div>
+
+        </section>
+
+
+
+
+
+
+
+
+         <br><br><br><br><br>
+
+
+
+
+
+
+
+        <section id="contato" class="contatos">
+            <h2 class="contato-titulos">Entre em Contato</h2>
+
+
+            <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+                <div class="grupo-form">
+                    <input placeholder="Nome" class="campo-form" id="nome">
+                </div>
+                <div class="grupo-form">
+                    <textarea id="mensagem" class="campo-form" placeholder="Digite sua Mensagem" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="botao-form">Enviar WhatsApp</button>
+            </form>
+        </section>
+
+
+
+
+        <script>
+            function enviarWhats(event){
+                event.preventDefault();
+                const nome = document.getElementById('nome').value;
+                const mensagem = document.getElementById('mensagem').value;
+                const telefone = '558398438366';
+                const texto = `Olá! me chamo ${nome}, ${mensagem}`;
+                const msgFormatada = encodeURIComponent(texto);
+                const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+                window.open(url, '_blank');
+            }
+            document.getElementById('formulario').addEventListener('submit', enviarWhats);
+        </script>
+
+
+
+        
+    </body>
+    </html>
