@@ -356,6 +356,11 @@ function fecharFutebol() {
             <img src="cert_4.jpeg" class="certificado-imagem">
             <h3>INGLÊS KIDS</h3>
         </div>
+
+        <div class="certificado-card" onclick="abrir_cert_5()">
+            <img src="cert_5.jpg" class="certificado-imagem">
+            <h3>TESTE CSS</h3>
+        </div>
     </div>
 </section>
 
@@ -391,6 +396,13 @@ function fecharFutebol() {
         <span class="fechar" onclick="fechar_cert_4()">✖</span>
         <img src="cert_4.jpeg">
     </div>
+
+<div id="cert_55" class="overlay-certificado">
+    <div class="modal-projeto">
+        <span class="fechar" onclick="fechar_cert_5()">✖</span>
+        <img src="cert_5.jpg">
+    </div>
+
 </div>
 
         <script>
@@ -424,6 +436,13 @@ function abrir_cert_4() {
 
 function fechar_cert_4() {
     document.getElementById("cert_44").style.display = "none";
+}
+
+function abrir_cert_5() {
+    document.getElementById("cert_55").style.display = "flex";
+}
+function fechar_cert_5() {
+    document.getElementById("cert_55").style.display = "none";
 }
 
 
