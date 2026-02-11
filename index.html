@@ -364,6 +364,10 @@ function fecharFutebol() {
             <img src="cert_5.jpg" class="certificado-imagem">
             <h3>TESTE CSS</h3>
         </div>
+
+        <div class="certificado-card" onclick="abrir_cert_6()">
+            <img src="cert_6.jpg" class="certificado-imagem">
+            <h3>TESTE HTML</h3>
     </div>
 </section>
 
@@ -399,14 +403,36 @@ function fecharFutebol() {
         <span class="fechar" onclick="fechar_cert_4()">✖</span>
         <img src="cert_4.jpeg">
     </div>
+</div>
 
 <div id="cert_55" class="overlay-certificado">
     <div class="modal-projeto">
         <span class="fechar" onclick="fechar_cert_5()">✖</span>
         <img src="cert_5.jpg">
     </div>
-
 </div>
+
+<div id="cert_66" class="overlay-certificado">
+    <div class="modal-projeto">
+        <span class="fechar" onclick="fechar_cert_6()">✖</span>
+        <img src="cert_6.jpg">
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <script>
 function abrir_cert_1() {
@@ -446,6 +472,13 @@ function abrir_cert_5() {
 }
 function fechar_cert_5() {
     document.getElementById("cert_55").style.display = "none";
+}
+function abrir_cert_6() {
+    document.getElementById("cert_66").style.display = "flex";
+}
+
+function fechar_cert_6() {
+    document.getElementById("cert_66").style.display = "none";
 }
 
 
