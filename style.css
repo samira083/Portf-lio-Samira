@@ -9,6 +9,13 @@ html {
     scroll-behavior: smooth ;
 }
 
+.bungee-regular {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 :root {
     --primaria: #1f2f52;
     --secundaria: #0D0D0D;
@@ -53,7 +60,7 @@ body{
     position: absolute;
     bottom: 0;
     left: 0;
-    background: linear-gradient(09deg, var(--claro), var(--secundaria));
+    background: linear-gradient(09deg,rgba(115, 0, 215, 0.647), rgb(64, 0, 255), black);
     transition: width 0.5s ease;
 }
 
@@ -85,18 +92,28 @@ h1{
     color: var(--claro);
     font-weight: bold;
     margin: 20px ;
+    font-family: "Syne", sans-serif;
+    font-weight: 1000;
+
+    
 }
 
 .cabecalho-sub-titulo{
-    font-size: 2rem;
+    font-family: "Syne", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
     color: var(--claro);
 }
 
 .sobre{
+    font-family: "Syne", sans-serif;
     padding: 6rem 2rem;
 }
 
 .sobre-titulo{
+    font-family: "Syne", sans-serif;
+    font-weight: 800;
+    font-family: "Syne", sans-serif;
     font-size: 3rem;
     color: var(--claro);
     text-align:center;
@@ -120,7 +137,7 @@ h1{
 
 }
 
-
+/*==================PROJETOS===========================*/
 .projetos{
     padding: 6rem 2rem;
 }
@@ -132,6 +149,8 @@ h1{
 }
 
 .projetos-titulos{
+    font-family: "Syne", sans-serif;
+    font-weight: 800;
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 50px;
@@ -152,6 +171,7 @@ h1{
 }
 
 .projetos-card{
+    
     width: 400px;
     background: rgba(255,255,255,0.05);
     border-radius: 16px;
@@ -165,6 +185,7 @@ h1{
 }
 
 .caixa-texto-projeto{
+    
     padding: 1.5rem;
 }
 
@@ -174,32 +195,14 @@ h1{
 }
 
 .info-projetos{
+    font-family: "Syne", sans-serif;
+    font-weight: 800;
     margin-bottom: 5px;
 }
 
 
 
-.contatos{
-    padding: 6rem 2rem;
-}
 
-
-.contato-titulos{
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 50px;
-}
-
-.formulario-contato{
-    max-width: 600px;
-    margin: 0 auto;
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(5px);
-    padding: 2rem;
-    border: 1px solid var(--vidro);
-    border-radius: 16px; 
-
-}
 
 .campo-form{
     width: 100%;
@@ -433,16 +436,26 @@ width: 100%;
 }
 
 
-
+/*====================CERTIFICADO=====================*/
 
 .certificados {
     padding: 6rem 2rem;
 }
 
+
 .certificados-titulo {
+    font-family: "Syne", sans-serif;
+    font-weight: 800;
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 50px;
+}
+
+.certificados-sub-titulo{
+            font-family: "Syne", sans-serif;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 50px;
 }
 
 .certificados-caixa {
@@ -468,6 +481,24 @@ width: 100%;
     box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
 }
 
+
+/*.cert_tittle{    =========== deixa os tittle verdes
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: rgba(16, 185, 129, 0.15);
+            border: 1px solid rgba(16, 185, 129, 0.4);
+            color: #52c133;
+            padding: 0.45rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin: 0.75rem 0;
+
+}*/
+
+
+
 .certificado-imagem {
     width: 100%;
     height: 220px;
@@ -475,6 +506,7 @@ width: 100%;
 }
 
 .certificado-nome {
+    
     padding: 1rem;
     font-size: 1rem;
 }
@@ -493,4 +525,185 @@ width: 100%;
     max-width: 90%;
     max-height: 90vh;
     border-radius: 10px;
+}
+
+
+
+
+
+
+
+        /* ===================== CONTATO ===================== */
+
+        .section-title {
+            font-family: "Syne", sans-serif;
+            font-weight: 800;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--claro);
+        }
+
+        .certificados-sub-titulo{
+            justify-items: center;
+            text-align: center;
+        }
+
+
+
+
+
+
+        .section-subtitle{
+            font-family: "Syne", sans-serif;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .section-title reveal {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--claro);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.05);;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(166, 0, 255, 0.186);;
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.35s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.12), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .contact-card:hover::before {
+            left: 100%;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 25px 50px rgba(99, 102, 241, 0.3);
+        }
+
+        .contact-icon {
+            width: 72px;
+            height: 72px;
+            background: linear-gradient(135deg, #6366f1,  #ec4899);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.2rem;
+            font-size: 1.8rem;
+            transition: transform 0.5s ease;
+        }
+
+        .contact-card:hover .contact-icon {
+            transform: rotate(360deg) scale(1.05);
+        }
+
+        .contact-card h3 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-card a {
+            color: #818cf8;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: color 0.25s ease;
+            word-break: break-all;
+        }
+
+        .contact-card a:hover {
+            color: #ec4899;
+        }
+
+        .contact-card .contact-note {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.82rem;
+            margin-top: 0.4rem;
+        }
+
+
+
+
+#contato {
+    background: none;
+    padding: 120px 8%;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+
+.profile-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* badge matemática */
+.math-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    width: 50px;
+    height: 50px;
+
+    background: linear-gradient(135deg, #6366f1, #22d3ee);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+
+    border: 3px solid #0f172a;
+
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.6);
+
+    animation: mathPulse 2.5s ease-in-out infinite;
+    z-index: 10;
+}
+
+@keyframes mathPulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(99, 102, 241, 0.6);
+    }
+    50% {
+        transform: scale(1.12);
+        box-shadow: 0 0 35px rgba(99, 102, 241, 0.9);
+    }
 }

@@ -4,6 +4,11 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+
+
 
             <title>DEV | Portfólio</title>
         </head>
@@ -180,7 +185,7 @@ Mantenho uma rotina disciplinada de estudos voltada à programação, fundamento
                 <div class="projetos-card" onclick="abrirChecklist()">
                     <img src="check_list.gif" alt="Check List" class="projeto-imagem">
                     <div class="caixa-texto-projeto">
-                    <h3 class="info-projetos">Check List</h3>
+                    <h3 class="info-projetos">CHECK LIST</h3>
                     <p class="paragrafo-projetos">Cyber-Routine é um assistente virtual no estilo cyberpunk. Inspirado no jogo 60 Seconds!, este projeto permite que o próprio jogador vivencie suas necessidades básicas — como fome, sede, vida e inventário...</p>
                     </div>
                 </div>
@@ -199,7 +204,7 @@ Mantenho uma rotina disciplinada de estudos voltada à programação, fundamento
             <img src="check_list.gif" alt="Check List grande">
 
             <div class="texto-projeto">
-                <h2>Check List – Cyber Routine</h2>
+                <h2>CHECK LIST – Cyber Routine</h2>
                 <p>
                     Assistente virtual com estética <strong>cyberpunk</strong>,
                     focado na criação de rotinas personalizadas.
@@ -238,7 +243,7 @@ Mantenho uma rotina disciplinada de estudos voltada à programação, fundamento
                 <div class="projetos-card" onclick="abrirFutebol()">
                     <img src="futebol.png" alt="Futebol API" class="projeto-imagem">
                     <div class="caixa-texto-projeto">
-                    <h3 class="info-projetos">Futebol API</h3>
+                    <h3 class="info-projetos">FUTEBOL API</h3>
                     <p class="paragrafo-projetos">Uma API REST completa para gerenciamento de times de futebol, jogadores, partidas e escalações, construída com Node.js, TypeScript, Prisma e PostgreSQL, totalmente containerizada com Docker...</p>
                     </div>
                 </div>
@@ -257,7 +262,7 @@ Mantenho uma rotina disciplinada de estudos voltada à programação, fundamento
             <img src="futebol.png" alt="Futebol API grande">
 
             <div class="texto-projeto">
-                <h2>Futebol API</h2>
+                <h2>FUTEBOL API</h2>
                 <p>
                     API REST completa para gerenciamento de times, jogadores,
                     partidas e escalações.
@@ -338,36 +343,39 @@ function fecharFutebol() {
 
 <section class="certificados" id="certificados">
     <h2 class="certificados-titulo">CERTIFICADOS</h2>
+    <h2 class="certificados-sub-titulo">medalhas  ·  conclusões  ·  testes </h2>
 
+
+    <br><br>
     <div class="certificados-caixa">
         <div class="certificado-card" onclick="abrir_cert_1()">
             <img src="cert_1.jpeg" class="certificado-imagem">
-            <h3>LIGMATH – MEDALHA DE OURO</h3>
+            <h3 class="cert_tittle">LIGMATH – MEDALHA DE OURO</h3>
         </div>
 
         <div class="certificado-card" onclick="abrir_cert_2()">
             <img src="cert_2.jpeg" class="certificado-imagem">
-            <h3>ENGLISH FOR LIVES</h3>
+            <h3 class="cert_tittle">ENGLISH FOR LIVES</h3>
         </div>
 
         <div class="certificado-card" onclick="abrir_cert_3()">
             <img src="cert_3.jpeg" class="certificado-imagem">
-            <h3>MSF – MEDALHA DE PRATA</h3>
+            <h3 class="cert_tittle">MSF – MEDALHA DE PRATA</h3>
         </div>
 
         <div class="certificado-card" onclick="abrir_cert_4()">
             <img src="cert_4.jpeg" class="certificado-imagem">
-            <h3>INGLÊS KIDS</h3>
+            <h3 class="cert_tittle">INGLÊS KIDS</h3>
         </div>
 
         <div class="certificado-card" onclick="abrir_cert_5()">
             <img src="cert_5.jpg" class="certificado-imagem">
-            <h3>TESTE CSS</h3>
+            <h3 class="cert_tittle">TESTE CSS</h3>
         </div>
 
         <div class="certificado-card" onclick="abrir_cert_6()">
             <img src="cert_6.jpg" class="certificado-imagem">
-            <h3>TESTE HTML</h3>
+            <h3 class="cert_tittle">TESTE HTML</h3>
     </div>
 </section>
 
@@ -514,21 +522,75 @@ function fechar_cert_6() {
 
 
 
-        <section id="contato" class="contatos">
-            <h2 class="contato-titulos">Entre em Contato</h2>
+    
 
+    <!-- CONTATO -->
+    <section id="contato">
+        <div class="container">
+            <h2 class="section-title reveal">Vamos Conversar?</h2>
+            <p class="section-subtitle reveal">Disponível para oportunidades de estágio e emprego em TI</p>
 
-            <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
-                <div class="grupo-form">
-                    <input placeholder="Nome" class="campo-form" id="nome">
+            <div class="contact-grid">
+                <div class="contact-card reveal">
+                    <div class="contact-icon" aria-hidden="true">📱</div>
+                    <h3>WhatsApp</h3>
+                    <a href="https://wa.me/qr/VE4HEHA62AJLB1" target="_blank" rel="noopener noreferrer">(83) 99843-8366</a>
+                    <p class="contact-note">Resposta rápida</p>
                 </div>
-                <div class="grupo-form">
-                    <textarea id="mensagem" class="campo-form" placeholder="Digite sua Mensagem" rows="4"></textarea>
+
+                <div class="contact-card reveal">
+                    <div class="contact-icon" aria-hidden="true">📧</div>
+                    <h3>E-mail</h3>
+                    <a href="mailto:samira.zw083@gmail.com">samira.zw083@gmail.com</a>
+                    <p class="contact-note">E-mail profissional</p>
                 </div>
 
-                <button type="submit" class="botao-form">Enviar WhatsApp</button>
-            </form>
-        </section>
+                <div class="contact-card reveal">
+                    <div class="contact-icon" aria-hidden="true">💼</div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/samira-pontes-6a9916253/" target="_blank" rel="noopener noreferrer">linkedin.com/in/samira-pontes</a>
+                    <p class="contact-note">Perfil profissional</p>
+                </div>
+
+                <div class="contact-card reveal">
+                    <div class="contact-icon" aria-hidden="true">💻</div>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/samira083" target="_blank" rel="noopener noreferrer">github.com/samira083</a>
+                    <p class="contact-note">Projetos e código</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
