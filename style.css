@@ -112,8 +112,10 @@ h1{
 
 .sobre-titulo{
     font-family: "Syne", sans-serif;
-    font-weight: 800;
+    font-weight: 1000;
+    color: linear-gradient(45deg, rgb(64, 0, 255), rgba(115, 0, 215, 0.647));
     font-family: "Syne", sans-serif;
+    text-shadow: 0 0 10px rgb(98, 0, 255);
     font-size: 3rem;
     color: var(--claro);
     text-align:center;
@@ -150,6 +152,7 @@ h1{
 
 .projetos-titulos{
     font-family: "Syne", sans-serif;
+    text-shadow: 0 0 10px rgb(157, 183, 255);
     font-weight: 800;
     text-align: center;
     font-size: 2.5rem;
@@ -446,6 +449,7 @@ width: 100%;
 .certificados-titulo {
     font-family: "Syne", sans-serif;
     font-weight: 800;
+    text-shadow: 0 0 10px rgb(157, 183, 255);
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 50px;
@@ -669,16 +673,16 @@ width: 100%;
     display: inline-block;
 }
 
-/* badge matemática */
+/* badge */
 .math-badge {
     position: absolute;
-    top: 15px;
+    top: 19px;
     left: 15px;
 
     width: 50px;
     height: 50px;
 
-    background: linear-gradient(135deg, #6366f1, #22d3ee);
+    background: linear-gradient(135deg, #02b705, #089213);
     border-radius: 50%;
 
     display: flex;
